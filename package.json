@@ -1,0 +1,25 @@
+{
+  "name": "bitovi-projects-grid",
+  "version": "0.0.1",
+  "description": "Bitovi's OSS libraries grid",
+  "main": "index.js",
+  "author": "Bitovi",
+  "license": "MIT",
+  "scripts": {
+    "build": "steal-tools",
+    "test": "jshint *.js --config .jshintrc"
+  },
+  "devDependencies": {
+    "@webcomponents/custom-elements": "^1.0.0-alpha.3",
+    "jshint": "^2.9.4",
+    "steal": "^1.0.0-rc.9",
+    "steal-conditional": "^0.2.1",
+    "steal-css": "^1.0.0-rc.0",
+    "steal-tools": "^1.0.0-rc.8"
+  },
+  "steal": {
+    "configDependencies": [
+      "./node_modules/steal-conditional/conditional.js"
+    ]
+  }
+}

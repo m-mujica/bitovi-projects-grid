@@ -1,0 +1,52 @@
+body {
+  width: 80%;
+  margin: 30px auto;
+  background: #F7F7F7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+bit-product {
+  display: inline-block;
+  width: calc(30% - 6px);
+  border-radius: 3px;
+  margin: 0.5em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  background: #FFF;
+  padding: 10px;
+  text-align: center;
+}
+
+bit-product a {
+  color: rgb(51, 51, 51);
+  display: inline-block;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
