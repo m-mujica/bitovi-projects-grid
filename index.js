@@ -2,20 +2,20 @@ import '@webcomponents/custom-elements#?needs-polyfill';
 import './styles.css';
 
 class BitProduct extends HTMLElement {
-	constructor() {
-		super();
+  constructor() {
+    super();
 
     this.appendChild(this._makeLinkElement());
   }
 
   _makeLinkElement() {
-		let link = document.createElement('a');
+    let link = document.createElement('a');
 
-		link.href = this.getAttribute('data-url');
+    link.href = this.getAttribute('data-url');
     link.appendChild(this._makeFigureElement());
 
-		return link;
-	}
+    return link;
+  }
 
   _makeFigureElement() {
     let figure = document.createElement('figure');
@@ -28,14 +28,14 @@ class BitProduct extends HTMLElement {
   }
 
   _makeImageElement() {
-		let img = document.createElement('img');
+    let img = document.createElement('img');
 
-		img.alt = this.getAttribute('data-name');
-		img.src = this.getAttribute('data-img');
-		img.className = 'product-img';
+    img.alt = this.getAttribute('data-name');
+    img.src = this.getAttribute('data-img');
+    img.className = 'product-img';
 
-		return img;
-	}
+    return img;
+  }
 
   _makeCaptionElement() {
     let caption = document.createElement('figcaption');
