@@ -1,1 +1,1 @@
-export default (typeof customElements === 'undefined');
+export default typeof customElements === 'undefined';
