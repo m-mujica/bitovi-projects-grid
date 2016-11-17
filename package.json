@@ -6,11 +6,11 @@
   "author": "Bitovi",
   "license": "MIT",
   "scripts": {
-    "build": "steal-tools",
+    "build": "rm -rf dist && steal-tools",
     "test": "jshint *.js --config .jshintrc"
   },
   "devDependencies": {
-    "@webcomponents/custom-elements": "^1.0.0-alpha.3",
+    "document-register-element": "^1.3.0",
     "jshint": "^2.9.4",
     "steal": "^1.0.0-rc.9",
     "steal-conditional": "^0.2.1",
@@ -18,6 +18,9 @@
     "steal-tools": "^1.0.0-rc.8"
   },
   "steal": {
+    "paths": {
+      "document-register-element": "./node_modules/document-register-element/build/document-register-element.js"
+    },
     "configDependencies": [
       "./node_modules/steal-conditional/conditional.js"
     ]
