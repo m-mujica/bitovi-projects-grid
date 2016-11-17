@@ -18,6 +18,9 @@
     "steal-tools": "^1.0.0-rc.8"
   },
   "steal": {
+    "paths": {
+      "document-register-element": "./node_modules/document-register-element/build/document-register-element.js"
+    },
     "configDependencies": [
       "./node_modules/steal-conditional/conditional.js"
     ]
