@@ -2,15 +2,15 @@ import 'document-register-element#?needs-polyfill';
 import './styles.css';
 
 function BitProduct() {
-  let self = Reflect.construct(HTMLElement, arguments, BitProduct);
-
-  self.appendChild(self._makeLinkElement());
-
-  return self;
+  return Reflect.construct(HTMLElement, arguments, BitProduct);
 }
 
 BitProduct.prototype = Object.create(HTMLElement.prototype);
 BitProduct.prototype.constructor = BitProduct;
+
+BitProduct.prototype.connectedCallback = function() {
+  this.appendChild(this._makeLinkElement());
+};
 
 BitProduct.prototype._makeLinkElement = function() {
   let link = document.createElement('a');
