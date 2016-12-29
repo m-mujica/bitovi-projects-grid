@@ -12,12 +12,13 @@
   "devDependencies": {
     "document-register-element": "^1.3.0",
     "jshint": "^2.9.4",
-    "steal": "^1.0.0-rc.9",
+    "steal": "^1.0.6",
     "steal-conditional": "^0.3.0",
-    "steal-css": "^1.0.0-rc.0",
-    "steal-tools": "^1.0.0-rc.8"
+    "steal-css": "^1.0.0",
+    "steal-tools": "^1.0.1"
   },
   "steal": {
+    "plugins": ["steal-css"],
     "paths": {
       "document-register-element": "./node_modules/document-register-element/build/document-register-element.js"
     },
